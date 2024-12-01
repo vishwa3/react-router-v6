@@ -8,7 +8,7 @@ function PostDetails() {
     const navigate = useNavigate()
   return (
     <div className='container'>
-       <span style={{display:"flex", flexDirection:"row", alignItems:"center", columnGap:"1rem" }}><FaArrowLeft onClick={() => navigate(-1)} style={{cursor: "pointer"}} size="32px" /><p style={{color: "royalblue"}}>Go Back</p></span> 
+       <span onClick={() => navigate(-1)} style={{display:"flex", flexDirection:"row", alignItems:"center", columnGap:"1rem", cursor:"pointer" }}><FaArrowLeft   size="32px" /><p style={{color: "royalblue"}}>Go Back</p></span> 
        <h1>Post Details</h1>
         <p>user-id: {data.userId}</p>
         <p>id: {data.id}</p>
